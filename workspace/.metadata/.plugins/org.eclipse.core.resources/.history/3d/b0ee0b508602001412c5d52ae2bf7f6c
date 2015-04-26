@@ -1,0 +1,227 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bookhaus | Home</title>
+
+	<!-- Google Font -->
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic' rel='stylesheet' type='text/css'>
+	
+    <!-- Bootstrap -->
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link href="./css/custom.css" rel="stylesheet">
+	<link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+  	<div id="wrapper">
+        <!-- Search Bar on top -->
+        <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+          <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="/Bookhaus" style="margin-left: 50px;"><img src="img/logo.png"> </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex1-collapse">
+              <ul class="nav navbar-nav side-nav">
+                <li class="dropdown" id="navBooks">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"> BOOKS <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="">Architecture</a></li>
+                    <li><a href="">Fantasy</a></li>
+                    <li><a href="">Fiction</a></li>
+                    <li><a href="">Science</a></li>
+                    <li><a href="">Travel</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown"> CD/DVD <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Music</a></li>
+                        <li><a href="#">Movie</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">SUPPLIES</a></li>
+                <li><a href="#">ACCESSORY</a></li>
+              </ul>
+
+              <ul class="nav navbar-nav navbar-right">
+                <form class="navbar-form navbar-left" role="search" method="GET" action="BasicSearch">
+	                 <div class="search-box">
+		                <div class="input-group">
+		                    <input type="text" class="form-control" placeholder="Search Your Item" name="searchTokens">
+		                    <span class="input-group-btn">
+		                    <button class="btn btn-primary" type="submit">
+		                        <span class="glyphicon glyphicon-search"></span>
+		                    </button>
+		                    </span>
+		                </div>
+	                </div>
+                </form> 
+				<li style="padding-top: 8px"><a href="advancesearch.jsp">Advance Search</a></li>
+                <li style="padding-top: 8px"><a href="contactUs.jsp">Contact Us</a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <div id="page-wrapper">
+        	<h3 class="heading">New &amp; Popular Items</h3>
+    		<div class="row">
+            	<div data-category="Books" class="col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+	                    <div class="figure">
+	                        <img alt="" src="img/B17.png" class="img-responsive">
+	                    </div>
+	                    <div class="brand-name">
+	                        <a href="ProductDetail?id=1&amp;category=Books">The Alchemist: a graphic novel</a>
+	                    </div>
+	                    <div class="price">
+	                        <p class="amount">Price:
+	                            <span>$15.0</span>
+	                        </p>
+	                    </div>
+	                </div>
+                </div>
+			
+            	<div data-category="Books" class="col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+	                    <div class="figure">
+	                        <img alt="" src="img/B06.png" class="img-responsive">
+	                    </div>
+	                    <div class="brand-name">
+	                        <a href="ProductDetail?id=2&amp;category=Books">The C Programming Language</a>
+	                    </div>
+	                    <div class="price">
+	                        <p class="amount">Price:
+	                            <span>$50.0</span>
+	                        </p>
+	                    </div>
+	                </div>
+                </div>
+			
+            	<div data-category="Music" class="col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+	                    <div class="figure">
+	                        <img alt="" src="img/M07.png" class="img-responsive">
+	                    </div>
+	                    <div class="brand-name">
+	                        <a href="ProductDetail?id=7&amp;category=Music">The Piano Guys 2</a>
+	                    </div>
+	                    <div class="price">
+	                        <p class="amount">Price:
+	                            <span>$12.0</span>
+	                        </p>
+	                    </div>
+	                </div>
+                </div>
+			
+            	
+			
+            	<div data-category="Books" class="col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+	                    <div class="figure">
+	                        <img alt="" src="img/B12.png" class="img-responsive">
+	                    </div>
+	                    <div class="brand-name">
+	                        <a href="ProductDetail?id=9&amp;category=Books">Harry Potter and the goblet of fire</a>
+	                    </div>
+	                    <div class="price">
+	                        <p class="amount">Price:
+	                            <span>$10.0</span>
+	                        </p>
+	                    </div>
+	                </div>
+                </div>
+			
+            	
+            	<div data-category="Music" class="col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+	                    <div class="figure">
+	                        <img alt="" src="img/M01.png" class="img-responsive">
+	                    </div>
+	                    <div class="brand-name">
+	                        <a href="ProductDetail?id=1&amp;category=Music">The Piano Guys</a>
+	                    </div>
+	                    <div class="price">
+	                        <p class="amount">Price:
+	                            <span>$11.0</span>
+	                        </p>
+	                    </div>
+	                </div>
+                </div>
+			
+            	<div data-category="Music" class="col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+	                    <div class="figure">
+	                        <img alt="" src="img/M03.png" class="img-responsive">
+	                    </div>
+	                    <div class="brand-name">
+	                        <a href="ProductDetail?id=3&amp;category=Music">Nothing but the beat: David Guetta</a>
+	                    </div>
+	                    <div class="price">
+	                        <p class="amount">Price:
+	                            <span>$11.0</span>
+	                        </p>
+	                    </div>
+	                </div>
+                </div>
+			
+            	<div data-category="Books" class="col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+	                    <div class="figure">
+	                        <img alt="" src="img/B21.png" class="img-responsive">
+	                    </div>
+	                    <div class="brand-name">
+	                        <a href="ProductDetail?id=20&amp;category=Books">Theory of Computer Science: Automata, Languages and Computation</a>
+	                    </div>
+	                    <div class="price">
+	                        <p class="amount">Price:
+	                            <span>$10.0</span>
+	                        </p>
+	                    </div>
+	                </div>
+                </div>
+                
+                <div data-category="Office Supplies" class="col-lg-3 col-md-4 col-sm-6">
+					<div class="product">
+	                    <div class="figure">
+	                        <img alt="" src="img/S01.png" class="img-responsive">
+	                    </div>
+	                    <div class="brand-name">
+	                        <a href="ProductDetail?id=1&amp;category=Office Supplies">color pen set</a>
+	                    </div>
+	                    <div class="price">
+	                        <p class="amount">Price:
+	                            <span>$20.0</span>
+	                        </p>
+	                    </div>
+	                </div>
+                </div>
+			</div>
+        </div><!-- /page wrapper -->
+    </div><!--  wrapper -->
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-1.11.1.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,294 @@
+/* 
+Author: Start Bootstrap - http://startbootstrap.com
+'SB Admin' HTML Template by Start Bootstrap
+
+
+All Start Bootstrap themes are licensed under Apache 2.0. 
+For more info and more free Bootstrap 3 HTML themes, visit http://startbootstrap.com!
+*/
+
+
+/* ATTN: This is mobile first CSS - to update 786px and up screen width use the media query near the bottom of the document! */
+
+
+/* Global Styles */
+
+body {
+  margin-top: 50px;
+  background-image: url(../img/backlogo.png), url(../img/background-old.png);
+  background-repeat: no-repeat, repeat;
+  background-size: 1400px, auto;
+}
+
+#wrapper {
+  padding-left: 0;
+}
+
+
+#page-wrapper {
+  padding: 5px 15px;
+  border-radius: 2px;
+  margin-top: 64px;
+  margin-right: 20px;
+  min-height: 500px;
+}
+
+#page-wrapper>.heading {
+	padding: 6px 20px;
+	color: #5a3e2f;
+	border-bottom: 1px solid #ddd;
+	font-weight: bold;
+	font-size: 22px;
+	text-transform: capitalize;
+}
+.navbar-default {
+  background-image: url(../img/background-wh.png);
+	border-bottom-color: #5a3e2f;
+	border-bottom-width: 3px;
+	border-bottom-style: dotted;
+}
+
+.nav {
+	font-weight: bold;
+}
+.navbar-default .navbar-nav>li>a, #categoryTabs a{
+	color:#5a3e2f;
+}
+.navbar-right>li>a{
+	font-size: 16px;
+}
+
+.navbar-right>li:hover>a{
+	text-decoration: underline;
+}
+.navbar-form {
+	display: inline;
+	margin: 0;
+	padding: 10px 0;
+}	
+.search-box {
+	width: 90%;
+	margin: 0px auto;
+	border-top: 1px solid black;
+	padding: 10px 0px;
+	border-bottom: 1px solid black;	
+}	
+.btn-primary {
+	background-color: #5a3e2f;
+	border-color: #5a3e2f;
+}
+
+.btn-primary:hover {
+	background-color: #5a3e2f;
+}
+
+#noResult h3 {
+	text-align: center;
+	margin-top: 100px;
+}
+.product {
+    margin: 24px auto;
+    border: 1px solid #E0EDED;
+    width: 200px;
+    height: 320px;
+    float: none;
+    box-shadow: 4px 4px 4px 2px #4E4E4E;
+    background: #FFF;
+    border-radius: 2px;
+}
+.product .figure {
+    padding: 6px 6px 0px;
+    border-bottom: 2px solid #59B2E5;
+}
+.product .figure img {
+	width: 160px;
+	height: 200px;
+	margin: 10px auto;
+	display: block;
+}
+
+.product .brand-name {
+    margin: 4px 0px;
+    padding: 2px;
+    text-align: center;
+    height: 40px;
+    line-height: 20px;
+    overflow: hidden;
+}
+.product .price {
+    margin: 4px 0px;
+    padding: 2px;
+    height: 60px;
+    line-height: 20px;
+    border-top: 2px solid #59B2E5;
+}
+.product .amount {
+    padding: 4px 10px;
+}
+.product .amount span {
+    font-size: 16px;
+    font-weight: 700;
+    float: right;
+    padding: 0px 4px;
+    color: #5a3e2f;
+}	
+
+.navbar-default .navbar-nav > li > a:focus {
+  color: #000;
+  background-color: transparent;
+}
+
+#map-canvas {
+	width: 100%;
+	height: 500px;
+	box-shadow: 0px 0px 6px 2px #474747;
+}
+
+.store-info {
+	background: white;
+	padding: 10px;
+	border-radius: 2px;
+	margin-bottom: 20px;
+	box-shadow: 4px 4px 4px #4E4E4E;
+}
+
+.store-info h3 {
+	margin: 4px 0;
+}
+
+.store-info p {
+	margin: 4px 0;
+}
+
+.store-info .glyphicon {
+	font-size: 14px;
+	margin: 0 4px;
+}
+@media (min-width: 480px) {
+	.product {
+		margin: 24px 8px;
+		float: left;
+	}
+}
+
+/* Edit Below to Customize Widths > 768px */
+@media (min-width:768px) {
+
+
+  /* Wrappers */
+
+
+  #wrapper {
+	padding-left: 225px;
+  }
+
+
+  #page-wrapper {
+	padding: 15px 25px;
+  }
+
+
+  /* Side Nav */
+
+
+  .side-nav {
+	margin-left: -225px;
+	left: 225px;
+	width: 225px;
+	position: fixed;
+	top: 56px;
+	height: 100%;
+	border-radius: 0;
+	border: none;
+	background-color: rgba(255,255,255,0.3);
+	overflow-y: auto;
+  }
+
+
+  /* Bootstrap Default Overrides - Customized Dropdowns for the Side Nav */
+
+
+  .side-nav>li.dropdown>ul.dropdown-menu {
+	position: relative;
+	min-width: 225px;
+	margin: 0;
+	padding: 0;
+	border: none;
+	border-radius: 0;
+	background-color: transparent;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+  }
+
+
+  .side-nav>li.dropdown>ul.dropdown-menu>li>a {
+	color: #5a3e2f;
+	padding: 5px 5px 5px 25px;
+	font-weight:bolder;
+	margin: 2px 0;
+  }
+
+
+  .side-nav>li.dropdown>ul.dropdown-menu>li>a:hover,
+  .side-nav>li.dropdown>ul.dropdown-menu>li>a.active,
+  .side-nav>li.dropdown>ul.dropdown-menu>li>a:focus {
+	color: white;
+	background-color: #5a3e2f;
+  }
+
+
+  .side-nav>li>a {
+	width: 225px;
+  }
+
+
+  .navbar-inverse .navbar-nav>li>a:hover,
+  .navbar-inverse .navbar-nav>li>a:focus {
+	background-color: #080808;
+  }
+
+  .navbar-collapse {
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+  }
+  
+  .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  
+	.search-box {
+		width: 240px;
+		border: 0;
+		padding: 0;
+ 	}
+ 	
+ 	.navbar-form {
+		display: block;
+	}	
+  
+}
+
+@media (max-width: 768px) {
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a {
+    color: #5a3e2f;
+	font-weight:bolder;
+  	}
+	.navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+  	.navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+   	 	color: #000000;
+    	background-color: transparent;
+ 	}	
+}
+
+@media (min-width: 992px) {
+	.search-box {
+ 		width: 420px;
+ 	}
+}
+
+@media (min-width: 1200px) {
+	.search-box {
+ 		width: 600px;
+ 	}
+}

@@ -1,0 +1,50 @@
+$(function(){
+	
+	var artistListData = $('#artistListData span').map(function(index, domEl){ return $(domEl).text();}),
+	publisherListData = $('#publisherListData span').map(function(index, domEl){ return $(domEl).text();}),
+	authorListData = $('#authorListData span').map(function(index, domEl){ return $(domEl).text();});
+	
+	$("#artist").autocomplete({
+	      source: artistListData
+	});
+	
+	$("#publisher").autocomplete({
+	      source: publisherListData
+	});
+	
+	$("#author").autocomplete({
+	      source: authorListData
+	});
+	
+	$("#booksPriceFilter, #booksYearFilter, #musicPriceFilter, #musicYearFilter, #suppliesPriceFilter, #accessPriceFilter").slider({});
+	
+	$("#booksPriceFilter, #musicPriceFilter, #suppliesPriceFilter, #accessPriceFilter").on('slide', function(slideEvt) {
+		$(this).parent().prev().text('$'+slideEvt.value[0]);
+		$(this).parent().next().text('$'+slideEvt.value[1]);
+		$($(this).data('input')).val(slideEvt.value.join('-'));
+	});
+	
+	$("#musicYearFilter").on('slide', function(slideEvt) {
+		$(this).parent().prev().text(slideEvt.value[0]);
+		$(this).parent().next().text(slideEvt.value[1]);
+		$($(this).data('input')).val(slideEvt.value.join('-'));
+	});
+	
+	$("#booksYearFilter").on('slide', function(slideEvt) {
+		$(this).parent().prev().text(slideEvt.value[0]);
+		$(this).parent().next().text(slideEvt.value[1]);
+		$($(this).data('input')).val(slideEvt.value[0] + '-01-01_' + slideEvt.value[1] + '-01-01');
+	});
+	
+	$('#isbn').keyup(function(){
+		$('#title, #author, #publisher, #price, #genre, #description').val('');
+	});
+	
+	$('#title, #author, #publisher, #description').keyup(function(){
+		$('#isbn').val('');
+	});
+	
+	$('#price, #genre').change(function(){
+		$('#isbn').val('');
+	});
+});
